@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Hola</h2>
+    <h1>Animales</h1>
+    {% for animal in mostrar_animales %}
+        <article>
+            <h2>Nombre cuidador: </h2><p>{{ animal.cuidador }}</p>
+            <h2>Animal: </h2><p>{{ animal.nombre }}</p>
+            <h2>Tipo: </h2>{{ animal.tipo }}<p></p>
+            <p>-----------------</p>
+        </article>
+    {% endfor %}
 </body>
 </html>
