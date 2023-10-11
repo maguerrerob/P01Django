@@ -1,7 +1,12 @@
 from django.shortcuts import render
-from .models import Animal
+
 # Create your views here.
 
-def list_animales(request):
-    animales = Animal.objects.all()
-    return render(request, 'animalitos/animales.html', {'animales_mostrar':animales})
+def vistaAnimal(request):
+    return render(request, "animalitos/post_animales.html", {})
+
+def vistaColaborador(request):
+    return render(request, "animalitos/post_colaboradores.html", {})
+
+def vistaProtectora(request):
+    return render(request, "animalitos/post_protectoras.html", {})
